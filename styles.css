@@ -21,13 +21,14 @@ body {
   background-color: #c5c5c5;
   width: 100%;
   border-bottom: 1px solid;
-  min-width: 420px;
+  /* min-width: 420px; */
   overflow-y: auto;
   overflow-x: hidden;
   height: 200px;
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   z-index: 1;
+  transition: top 0.3s; /* transition effect when sliding down and up*/
 }
 
 section {
