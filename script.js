@@ -1,33 +1,9 @@
-const navBar = document.getElementById("navbar");
+let navBar = document.getElementById("mobileNav");
 
-// Functionality to handle changes in the media query
-const handleMediaQuery = (x) => {
-  if (x.matches) {
-    // If the media query matches (viewport width <= 760px)
-    // At this point the hamburger icon will display according to the css styling rule set.
-    // And the main navigation menu for viewports > 760px will not be displayed.
-    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-    var prevScrollpos = window.scrollY;
-    window.onscroll = function () {
-      var currentScrollPos = window.scrollY;
-      if (prevScrollpos > currentScrollPos) {
-        navBar.style.top = "0";
-      } else {
-        navBar.style.top = "-200px";
-      }
-      prevScrollpos = currentScrollPos;
-    };
-  } else {
-    // Otherwise (viewport width > 760px)
-    navBar.style.top = "0";
-  }
-};
+function openNav() {
+  navBar.style.width = "100%";
+}
 
-// Create a MediaQueryList object for the specified media query
-var x = window.matchMedia("(max-width: 815px)");
-
-// Call the listener function initially
-handleMediaQuery(x);
-
-// Attach the listener function to changes in the media query state
-x.addEventListener("change", handleMediaQuery);
+function closeNav() {
+  navBar.style.width = "0%";
+}

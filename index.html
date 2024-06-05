@@ -4,17 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Techinical Documentation Page Project</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles1.css" />
   </head>
 
   <body>
+    <!-- Nav for large screen size -->
     <nav id="navbar">
       <header>HTML Documentation</header>
-      <!-- Additionally, the navbar should contain link (a) elements with the class of nav-link. **There should be one for every element with the class main-section -->
-      <!--The text here should correspond to the header text within each section in the main tag
-      and should be clickable to that section.
-       When you click on a navbar element, the page should navigate to the corresponding section of the #main-doc element -->
+
       <ul>
+        <li>
+          <a class="nav-link" href="#A_Little_In-depth_On_HTML"
+            >A Little In-depth On HTML</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#HTML_Element_Anatomy"
+            >HTML Element Anatomy</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Nesting_Elements">Nesting Elements</a>
+        </li>
+        <li><a class="nav-link" href="#Void_Elements">Void Elements</a></li>
+        <li><a class="nav-link" href="#Attributes">Attributes</a></li>
+        <li>
+          <a class="nav-link" href="#HTML_Document_Anatomy"
+            >HTML Document Anatomy</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Reference">Reference</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Nav for mobile screen... -->
+
+    <nav id="mobileNav" class="overlay">
+      <header>HTML Documentation</header>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <ul class="overlay-content">
         <li>
           <a class="nav-link" href="#HTML_-_An_Introduction"
             >HTML - An Introduction</a
@@ -46,6 +78,12 @@
       </ul>
     </nav>
 
+    <span
+      class="hamOpen"
+      style="font-size: 30px; cursor: pointer"
+      onclick="openNav()"
+      >&#9776;</span
+    >
     <main id="main-doc">
       <section id="HTML_-_An_Introduction" class="main-section">
         <header>HTML - An Introduction</header>
