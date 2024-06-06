@@ -42,10 +42,8 @@
     <!-- Nav for mobile screen... -->
 
     <nav id="mobileNav" class="overlay">
-      <header>HTML Documentation</header>
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
+      <header class="head">HTML DOCUMENTATION</header>
+
       <ul class="overlay-content">
         <li>
           <a class="nav-link" href="#HTML_-_An_Introduction"
@@ -76,14 +74,15 @@
           <a class="nav-link" href="#Reference">Reference</a>
         </li>
       </ul>
+      <div class="closeDiv">
+        <span class="closebtn" onclick="closeNav()">&times;</span>
+      </div>
     </nav>
 
-    <span
-      class="hamOpen"
-      style="font-size: 30px; cursor: pointer"
-      onclick="openNav()"
-      >&#9776;</span
-    >
+    <div class="hamDiv" >
+      <span class="openbtn" onclick="openNav()">&#9776;</span>
+    </div>
+
     <main id="main-doc">
       <section id="HTML_-_An_Introduction" class="main-section">
         <header>HTML - An Introduction</header>

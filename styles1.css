@@ -25,7 +25,6 @@ body {
   overflow-x: hidden;
   resize: horizontal;
   background-color: #c5c5c5;
-  /* top: 0; */
 }
 
 #mobileNav {
@@ -123,22 +122,25 @@ footer {
   }
 
   .main-section {
-    padding-top: 1.5rem;
+    padding-top: 2rem;
   }
 
-  .hamOpen {
+  .hamDiv {
     background-color: #c5c5c5;
     display: flex;
-    /* justify-content: right; */
     position: fixed;
-    padding-left: 30px;
-    /* top: 10px; */
-    /* right: 20px; */
+    top: 0;
+    padding: 0.4rem 0 0.5rem 2rem;
     width: 100%;
+    box-shadow: 0px 1px 10px 2px #4d4e53;
   }
 
   #mobileNav {
     display: block;
+  }
+
+  span {
+    font-weight: bolder;
   }
 
   .overlay {
@@ -148,38 +150,46 @@ footer {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #4d4e53ec;
     overflow-x: hidden;
     transition: 0.5s;
   }
 
   .overlay-content {
     position: relative;
-    top: 25%;
+    top: 2rem;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
   }
 
-  .overlay a {
+  .overlay a,
+  .head {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
-    color: #818181;
+    font-size: 1.5rem;
+    color: #fcfafa;
     display: block;
     transition: 0.3s;
   }
 
   .overlay a:hover,
   .overlay a:focus {
-    color: #f1f1f1;
+    font-weight: 700;
+  }
+
+  .closeDiv {
+    padding-right: 3rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: right;
   }
 
   .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    font-size: 3rem;
+    color: #fcfafa;
   }
 }
