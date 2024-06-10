@@ -1,5 +1,7 @@
 let navPane = document.getElementById("nav-pane");
 let mobHeader = document.getElementById("mob-header");
+let cancelBtn = document.getElementById("fa-x");
+let mainSegment = document.getElementById("main");
 
 function openNav() {
   navPane.style.display = "block";
@@ -18,9 +20,14 @@ const handleMediaQuery = (x) => {
     // And the main navigation menu for viewports > 760px will not be displayed.
     mobHeader.style.display = "flex";
     navPane.style.display = "none";
+    mainSegment.style.margin = "0";
+    cancelBtn.style.display = "block";
   } else {
     mobHeader.style.display = "none";
     navPane.style.display = "block";
+    navPane.style.width = "25%";
+    cancelBtn.style.display = "none";
+    mainSegment.style.marginLeft = "26.4%";
     // Otherwise (viewport width > 768px)
   }
 };

@@ -44,6 +44,7 @@ html {
 body {
   /* background-color: brown; */
   font-family: var(--font-1);
+  font-weight: 500;
 }
 
 ol,
@@ -82,8 +83,9 @@ h2 {
   flex-direction: column;
   padding: 1rem;
   line-height: 1.25rem;
-  /* word-wrap: break-word; */
   word-break: break-word;
+  /* font-family: var(--font-3); */
+  /* word-wrap: break-word; */
   /* font-family: var(--font-1); */
   /* position: relative; */
   /* width: 100%; */
@@ -118,10 +120,6 @@ header {
   margin-right: 0.5rem;
 }
 
-.fa-solid {
-  /* background-color: azure; */
-}
-
 .mob-title {
   font-size: 1.3rem;
   width: 90%;
@@ -137,9 +135,6 @@ header {
   background-color: #0a0708a5;
   position: fixed;
   height: 100%;
-  overflow-x: hidden;
-  /* overflow-y: hidden; */
-  transition: 0.5s;
   top: 0;
   left: 0;
   z-index: 1;
@@ -148,6 +143,9 @@ header {
   text-align: center;
   padding: 2rem 0.5rem;
   line-height: 2rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* transition: 0.5s; */
 }
 
 nav h1 {
@@ -161,14 +159,11 @@ nav ul {
   padding: 0;
 }
 
-nav li {
-}
-
 nav a {
   /* width: 100%; */
   color: var(--color-4);
   display: block;
-  transition: 1s;
+  transition: 0.6s;
   font-weight: 600;
   margin: 3rem 0;
 }
@@ -224,7 +219,6 @@ code {
   flex-wrap: wrap;
   text-wrap: wrap;
   word-break: break-word;
-  /* white-space-collapse: discard; */
 }
 
 .mdn {
@@ -245,19 +239,74 @@ footer {
 
 @media only screen and (min-width: 768px) {
   header {
-    /* display: none; */
+    display: none;
   }
 
   .container-2 {
     flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
   }
 
   #nav-pane {
+    background-color: var(--color-3);
     display: block;
-    width: 30%;
+    font-size: 1rem;
+    line-height: 1rem;
+    width: 18rem;
+    min-width: 18rem;
+    padding: 0;
+    /* top: 0; */
+    /* height: 100%; */
+    /* background-color: aquamarine; */
+    /* border: 2px solid black; */
+    /* left: 1rem; */
+  }
+
+  nav h1 {
+    display: block;
+    color: var(--color-1);
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+  nav a {
+    color: var(--color-1);
+    margin: 0;
+    padding: 1.3rem;
+    border-top: 1px solid var(--color-2);
+  }
+
+  nav a:hover {
+    font-weight: 700;
+    font-size: 1.1rem;
+    /* color: var(--color-2); */
+    /* background-color: var(--color-2); */
+  }
+
+  nav h1 {
+    /* line-height: 3rem;
+    font-size: 1.7rem; */
+    display: block;
+  }
+
+  .fa-x {
+    display: none;
   }
 
   main {
-    margin-left: 2rem;
+    /* width: 75%; */
+    margin-left: 26.4%;
+    /* margin-left: 2rem; */
+    /* background-color: burlywood; */
+  }
+
+  section {
+    padding-top: 1rem;
+    /* background-color: burlywood; */
+  }
+
+  .first-header {
+    padding-top: 0;
   }
 }
