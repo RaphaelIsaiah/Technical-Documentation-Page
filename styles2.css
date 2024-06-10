@@ -1,14 +1,120 @@
+/* Custom Variables */
 :root {
-  --color_1: #0a0708;
-  --color_2: #444444;
-  --color_3: #747474;
-  --color_4: #b1b1b1;
+  --color-1: #0a0708;
+  --color-2: #444444;
+  --color-3: #747474;
+  --color-4: #b1b1b1;
+  --font-1: "Montserrat", sans-serif;
+  --font-2: "Oswald", sans-serif;
+  --font-3: "Roboto Mono", monospace;
 }
 
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
+/* ------- MOBILE FIRST ------------ */
+
+.main-container {
+  background-color: var(--color-4);
+  color: var(--color-1);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-1);
+}
+
+.image {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+header,
+.container-2,
+nav,
+main,
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: yellowgreen;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.7rem 0;
+  /* justify-content: space-between; */
+}
+
+.mob-bar {
+  width: 10%;
+  font-size: 1.3rem;
+  /* background-color: aquamarine; */
+}
+
+.fa-solid {
+  /* background-color: azure; */
+}
+
+.mob-title {
+  font-size: 1.3rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* background-color: brown; */
+  /* margin: auto; */
+}
+
+#nav-pane {
+  padding-top: 0.4rem;
+  display: none;
+  /* width: 0%; */
+  background-color: bisque;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+ol {
+  /* background-color: wheat; */
+  padding: 1rem;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+
+/* ------------- DESKTOP VIEW ----------- */
+
+@media only screen and (min-width: 768px) {
+  header {
+    /* display: none; */
+  }
+
+  .container-2 {
+    flex-direction: row;
+  }
+
+  #nav-pane {
+    display: block;
+    width: 30%;
+  }
+
+  main {
+    margin-left: 2rem;
+  }
+}
