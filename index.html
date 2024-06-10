@@ -37,16 +37,21 @@
     <div class="main-container">
       <!-- This header displays only only on mobile screens. -->
       <header id="mob-header">
-        <span class="mob-bar"><i class="fa-solid fa-bars" onclick="openNav()"></i></span>
+        <span class="mob-bar"
+          ><i class="fa-solid fa-bars" onclick="openNav()"></i
+        ></span>
         <h1 class="mob-title">HTML DOCUMENTATION</h1>
       </header>
 
       <div class="container-2">
         <!-- This nav displays on large screens. It also displays on mobile screens with a different style. -->
-        <nav id="nav-pane">
+        <nav id="nav-pane" class="nav-overlay">
           <!-- This h1 will not be displayed on mobile screens. -->
           <h1>HTML DOCUMENTATION</h1>
           <ul>
+            <li>
+              <a href="#HTML_-_An_Introduction">HTML - An Introduction</a>
+            </li>
             <li>
               <a href="#A_Little_In-depth_On_HTML">A Little In-depth on HTML</a>
             </li>
@@ -77,7 +82,7 @@
         <!-- Main content of the documentation page -->
         <main>
           <section id="HTML_-_An_Introduction">
-            <h2>HTML - An Introduction</h2>
+            <h2 class="first-header">HTML - An Introduction</h2>
 
             <article>
               <p>
@@ -228,7 +233,7 @@
                 <code class="code-inline">&lt;img&gt;</code> element embeds an
                 image file onto a page:
               </p>
-              <code>
+              <code class="void-element-code">
                 &lt;img
                 src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"
                 alt="Firefox icon"/&gt;
@@ -274,22 +279,22 @@
                 HTML page:
               </p>
               <pre>
-              <code>
-                &lt;!DOCTYPE html&gt;
-                &lt;html lang="en-US"&gt;
-                  &lt;head&gt;
-                    &lt;meta charset="UTF-8" /&gt;
-                    &lt;title&gt;My test page&lt;/title&gt;
-                  &lt;/head&gt;
-                  &lt;body&gt;
-                    &lt;p&gt;This is my page&lt;/p&gt;
-                  &lt;/body&gt;
-                &lt;/html&gt;
+              <code class="pre-code">
+ &lt;!DOCTYPE html&gt;
+ &lt;html lang="en-US"&gt;
+   &lt;head&gt;
+     &lt;meta charset="UTF-8" /&gt;
+     &lt;title&gt;My test page&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+     &lt;p&gt;This is my page&lt;/p&gt;
+   &lt;/body&gt;
+ &lt;/html&gt;
               </code>
             </pre>
 
               <p>Here we have:</p>
-              <ol class="right">
+              <ul class="right">
                 <li>
                   <code class="code-inline">&lt;!DOCTYPE html&gt;</code>: The
                   doctype. When HTML was young (1991-1992), doctypes were meant
@@ -323,10 +328,9 @@
                   <code class="code-inline">&lt;meta charset="UTF-8"&gt;</code>:
                   The <code class="code-inline">&lt;meta&gt;</code> element.This
                   element represents metadata that cannot be represented by
-                  other HTML meta-related elements, like<code
-                    class="code-inline"
-                    >&lt;base&gt;</code
-                  >, <code class="code-inline">&lt;link&gt;</code>,
+                  other HTML meta-related elements, like
+                  <code class="code-inline">&lt;base&gt;</code>,
+                  <code class="code-inline">&lt;link&gt;</code>,
                   <code class="code-inline">&lt;script&gt;</code>,
                   <code class="code-inline">&lt;style&gt;</code> or
                   <code class="code-inline">&lt;title&gt;</code>. The charset
@@ -351,7 +355,7 @@
                   including text, images, videos, games, playable audio tracks,
                   or whatever else.
                 </li>
-              </ol>
+              </ul>
             </article>
           </section>
 

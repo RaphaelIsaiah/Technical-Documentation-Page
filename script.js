@@ -1,5 +1,5 @@
 let navPane = document.getElementById("nav-pane");
-let mobHeader = document.getElementById("mob-header")
+let mobHeader = document.getElementById("mob-header");
 
 function openNav() {
   navPane.style.display = "block";
@@ -13,15 +13,15 @@ function closeNav() {
 
 const handleMediaQuery = (x) => {
   if (x.matches) {
-    // If the media query matches (viewport width <= 760px)
+    // If the media query matches (viewport width <= 768px)
     // At this point the hamburger icon will display according to the css styling rule set.
     // And the main navigation menu for viewports > 760px will not be displayed.
-   mobHeader.style.display = "flex"
-   navPane.style.display = "none"
+    mobHeader.style.display = "flex";
+    navPane.style.display = "none";
   } else {
-    mobHeader.style.display = "none"
-    navPane.style.display = "block"
-    // Otherwise (viewport width > 760px)
+    mobHeader.style.display = "none";
+    navPane.style.display = "block";
+    // Otherwise (viewport width > 768px)
   }
 };
 
